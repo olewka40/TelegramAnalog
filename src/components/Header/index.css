@@ -1,0 +1,49 @@
+.header {
+    background-color: white;
+    width: 100%;
+    min-height: 15%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 1%;
+    border-top-bottom: 1px solid white;
+
+
+}
+
+body {
+    background: white;
+    font-family: "Open Sans",  Impact;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+
+}
+.welcome {
+    display: block;
+    text-align: center;
+    animation: blur 3s ease infinite;
+    animation-direction: alternate-reverse;
+    height: 16px;
+    font-size: 18px;
+    align-items:center;
+    color: black;
+}
+@keyframes blur {
+  from {
+    text-shadow:
+            0px 0px 1px #007bff,
+            0px 0px 10px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 25px #007bff,
+            0px 0px 10px #007bff,
+            0px 0px 1px #007bff;
+  }
+}
