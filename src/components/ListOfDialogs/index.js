@@ -4,8 +4,7 @@ import { UserName } from "../../styles/styles";
 import { ImgAvatar } from "../../styles/styles";
 import { SenderName } from "../../styles/styles";
 import { Menu , Lock }  from '@material-ui/icons';
-import Button from '@material-ui/core/Button';
-import { Input } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 
 
 class Dialog extends React.Component {
@@ -14,9 +13,13 @@ class Dialog extends React.Component {
       <div className="listOfDialog">
               <div className="navBar">
 
-                  <Button size="small" color="primary"> <Menu color="primary" style={{ width:25 ,  }} />  </Button>
-                  <Input className="input" />
-                  <Button size="small" color="primary">  <Lock color="primary" style={{ fontSize: 25 ,  }} /></Button>
+                  <Button size="medium" color="primary"> <Menu color="primary" style={{ width:30 ,  }} />  </Button>
+                  <TextField className="textField"
+                      style={{}}
+                      id="outlined-name"
+                      variant="outlined"
+                  />
+                  <Button size="medium" color="primary">  <Lock color="primary" style={{ fontSize: 30 ,  }} /></Button>
               </div>
           <div className="dialogs">
               <ImgAvatar src="" className="avatar" ></ImgAvatar>

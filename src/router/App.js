@@ -1,32 +1,10 @@
 import React from "react";
 // import { Switch, Route } from "react-router-dom";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Dialog from "../components/Dialog";
 import ListOfDialogs from "../components/ListOfDialogs";
 import uuid from "uuid";
-
-
-// const userDialogs = [
-//     {
-//         companionId: uuid(),
-//         messages:
-//             [
-//                 {
-//                     id: userDialogs.companionId,
-//                     text: "privet"
-//                 },
-//                 {
-//                     text: "Privet",
-//                     id: ""
-//                 },
-//             ]
-//
-//     },
-// ];
-// const renderDialogs = userDialogs.map(item => item);
-
-
-
+import "./index.css"
 
 const usersData = [
     {
@@ -34,15 +12,31 @@ const usersData = [
         userName: "Ivan",
         userLogin: "Ivan4ello",
         userPassword: "vanya2001",
-        // userDialogs: renderDialogs
+        userAvatar: "",
+        userDialogs: [
+                {
+                    companionId: uuid(),
+                    messages:
+                        [
+                            {
+                                id: "",
+                                text: "privet"
+                            },
+                            {
+                                id: "",
+                                text: "Privet",
 
+                            },
+                        ]
+                },
+            ]
     }
 ];
 console.log(usersData)
 
 const App = () => (
-    <div className="main" style={{backgroundColor:"white"}}>
-        <Header />
+    <div className="main" style={{backgroundColor:"#037260"}}>
+        {/*<Header />*/}
         <ListOfDialogs />
         <Dialog />
 
